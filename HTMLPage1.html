@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <script type="text/javascript" src="Engine/Transforms.js"></script>
+    <script type="text/javascript" src="Engine/HTML5CanvasRenderer.js"></script>
+    <script type="text/javascript" src="Engine/Collision.js"></script>
+    <script type="text/javascript" src="Engine/Geometry.js"></script>
+    <script type="text/javascript" src="Engine/InputManager.js"></script>
+    <script type="text/javascript" src="Engine/Animations.js"></script>
+    <script type="text/javascript" src="Engine/Utilities.js"></script>
+    <script type="text/javascript" src="GameModel.js"></script>
+    <script type="text/javascript" src="GameObjectModeFactory.js"></script>
+    <script type="text/javascript" src="GameObjectModel.js"></script>
+    <script type="text/javascript" src="Application.js"></script>
+    <script type="text/javascript">
+        function onLoad() {  
+            var canvas = document.getElementById("gameCanvas");
+            var app = new Application(canvas);
+            app.start();
+        }
+    </script>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body onload="onLoad()">
+    <canvas id ="gameCanvas" width="400" height="300"></canvas>
+</body>
+</html>
